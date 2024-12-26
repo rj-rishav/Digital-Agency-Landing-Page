@@ -214,38 +214,38 @@ main {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-.pricing-table {
+#pricing-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.pricing-table th,
-.pricing-table td {
+#pricing-table th,
+#pricing-table td {
   text-align: left;
   padding: 16px;
   font-size: 1rem;
 }
 
-.pricing-table th {
+#pricing-table th {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   font-weight: 600;
   letter-spacing: 1px;
 }
-.pricing-table td {
+#pricing-table td {
   background-color: var(--primary-color);
   border: 1px solid var(--tertiary-color);
   color: var(--quaternary-color);
 }
 
-.pricing-table td:nth-child(2) {
+#pricing-table td:nth-child(2) {
   font-weight: 700;
   font-size: 1.2rem;
   color: #6c4f31;
 }
 
-.pricing-table td:nth-child(3) {
+#pricing-table td:nth-child(3) {
   font-style: italic;
   color: var(--quaternary-color);
 }
@@ -365,10 +365,11 @@ main {
   margin-right: auto;
 }
 #contact > div {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 #contact > div > img {
   height: 40vh;
@@ -546,12 +547,12 @@ main {
   }
 
   /* Pricing Table */
-  .pricing-table {
+  #pricing-table {
     font-size: 0.9rem;
   }
 
-  .pricing-table th,
-  .pricing-table td {
+  #pricing-table th,
+  #pricing-table td {
     padding: 12px;
   }
 
@@ -584,7 +585,7 @@ main {
   }
 
   #contact > div {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 2rem;
   }
